@@ -6,7 +6,7 @@ class Liquidity(Data):
 	Liquidity engine
 	'''
 
-	# v: [network] this parameter is the multiple of the margin required as coverage to secure the minimum stake obligation
+	# v: [network] this parameter is the multiple of the target stake required as coverage to secure the obligation
 	v: float = 5
 
 	# k: [network] this sets obligation (siskas), i.e. obligation = k * comitted stake
