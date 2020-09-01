@@ -6,10 +6,7 @@ class Liquidity(Data):
 	Liquidity engine
 	'''
 
-	# c2: [network] this is the  multiple of open interest that we target for coverage by liquidity providers
-	c2: float = 1
-
-	# v: [network] this parameter is the multiple of the target coverage required as stake to secure the obligation
+	# v: [network] this parameter is the multiple of the target stake required as coverage to secure the obligation
 	v: float = 5
 
 	# k: [network] this sets obligation (siskas), i.e. obligation = k * comitted stake

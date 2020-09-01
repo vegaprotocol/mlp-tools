@@ -61,9 +61,9 @@ class Market(Data):
     def target_stake(self):
         max_oi = max(self._window(
             self.liquidity.stake_target_period, 'open_interest'))
-        c2, v = self.liquidity.c2, self.liquidity.v
+        v = self.liquidity.v
         rf = self.risk_model.RiskFactorShort()
-        return max_oi * c2 * v * rf
+        return max_oi * v * rf
 
     @property
     def annualised_return(self):

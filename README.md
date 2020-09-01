@@ -81,8 +81,6 @@ A market is set up using the Market class in market.py. Each market has one risk
 
 The important parameters of the markets are:
 
-	# c2: [network] this is the  multiple of open interest that we target for coverage by liquidity providers
-
 	# v: [network] this parameter is the multiple of the target coverage required as stake to secure the obligation
 
 	# k: [network] this sets obligation (siskas), i.e. obligation = k * comitted stake
