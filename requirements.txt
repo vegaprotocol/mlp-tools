@@ -1,0 +1,8 @@
+# Packages we need to run the sim - use with `pip3 install -r requirements.txt`
+
+pandas
+numpy
+scipy
+matplotlib
+ipywidgets
+requests
