@@ -13,10 +13,9 @@ import mechanism.market
 #   - calculate equity and reward share for each LP
 #   - calculate fees from fee bids and open interest
 #   - set calculation window for demand proxy (stake target) and valuation (volume)
-#
-# Still to do:
-#   - reduce size of existing commitment
+#   - reduce size of commitment
 #   - increase size of commitment
+#   - model order volume, margin for liquidity provider orders
 
 
 # To avoid division by zero errors
