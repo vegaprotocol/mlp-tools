@@ -72,7 +72,7 @@ This tool models how Vega's liquidity rewards adjust depending on the daily trad
 
 It makes no assumption about the amount of volume that a market maker will trade, nor the corresponding inventory risk.
 
-For a simple example start with [liquidity_reward_distribution.ipynb](.notebooks/liquidity_reward_distribution.ipynb)
+For a simple example start with [liquidity_reward_distribution.ipynb](./notebooks/liquidity_reward_distribution.ipynb)
 
 
 ### Step 1 - setting up a market
@@ -103,7 +103,7 @@ To set up the _sell side orders_ and _sell side orders_, you can use those suppl
 
 ### Step 3 - simulate the outcomes using daily data.
 
-You can use daily market data from historical market data sets or simulate your own "daily market outcomes". The data required is 24hour-notional-volume, open-interest, price. See [liquidity_reward_distribution.ipynb](.notebooks/liquidity_reward_distribution.ipynb) for how to loop through the daily data and calculate daily liquidity characteristics.
+You can use daily market data from historical market data sets or simulate your own "daily market outcomes". The data required is 24hour-notional-volume, open-interest, price. See [liquidity_reward_distribution.ipynb](./notebooks/liquidity_reward_distribution.ipynb) for how to loop through the daily data and calculate daily liquidity characteristics.
 
 
 ### Step 4 - visualising the outcomes
