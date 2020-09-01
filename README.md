@@ -81,15 +81,13 @@ A market is set up using the Market class in market.py. Each market has one risk
 
 The important parameters of the markets are:
 
-	# c2: [network] this is the  multiple of open interest that we target for coverage by liquidity providers
-
-	# v: [network] this parameter is the multiple of the target coverage required as stake to secure the obligation
-
-	# k: [network] this sets obligation (siskas), i.e. obligation = k * comitted stake
+	# v: [network] this parameter is the this parameter is the multiple of the margin required as coverage to secure the minimum stake obligation
+	
+	# k: [network] this sets obligation (siskas), i.e. obligation = k * committed stake
 
 	# stake_target_period: [network] take MAXIMUM open interest over this period when calculating stake target
 
-	# valuation_period: [netowrk] take SUM of traded volume over this period when calculating "valuation"
+	# valuation_period: [netowork] take SUM of traded volume over this period when calculating "valuation"
 
 
 ### Step 2 - creating liquidity provision commitments
