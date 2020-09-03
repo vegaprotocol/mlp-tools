@@ -80,7 +80,7 @@ class Market(Data):
         constant for a year.
         '''
     
-        cost_base = self.total_stake + self.total_margin
+        cost_base = self.target_stake + self.total_margin
         return (365 * self.fees_collected) / cost_base if cost_base > 0 else 0
 
 
