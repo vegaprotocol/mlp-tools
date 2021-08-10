@@ -7,7 +7,7 @@ This is a collection of Python classes / Python scripts and Jupyter notebooks th
 
 ## Code license and additional disclaimer
 
-See [LICENSE](LICENSE.md). Additional disclaimer:
+See [LICENSE](LICENSE). Additional disclaimer:
 
 ```
 THE SOFTWARE IS PROVIDED ON AN "AS IS" BASIS AND IS AN INCOMPLETE AND SIMPLIFIED 
