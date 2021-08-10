@@ -7,29 +7,9 @@ This is a collection of Python classes / Python scripts and Jupyter notebooks th
 
 ## Code license and additional disclaimer
 
+See [LICENSE](LICENSE.md). Additional disclaimer:
+
 ```
-MIT License
-
-Copyright (c) 2020 Vega Holdings Ltd.
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
 THE SOFTWARE IS PROVIDED ON AN "AS IS" BASIS AND IS AN INCOMPLETE AND SIMPLIFIED 
 SIMULATION OF SOME (BUT NOT ALL) ASPECTS OF THE VEGA TESTNET. IT MIGHT BEHAVE IN
 UNEXPECTED WAYS AND OUTPUTS MAY CHANGE AT ANY TIME. DEVELOPMENT OF THIS TOOL IS
@@ -39,7 +19,6 @@ SPECIFIC WAY OR BE USEFUL FOR ANY PURPOSE WHATSOEVER. ALL REFERENCES TO INCOME,
 PROFIT AND LOSSES, HISTORICAL AND RANDOMLY GENERATED DATA REFER TO THE 
 SIMULATION, AND ARE FOR ILLUSTRATION PURPOSES ONLY.
 ```
-
 
 ## Requirements 
 
