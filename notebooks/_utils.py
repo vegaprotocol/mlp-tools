@@ -15,7 +15,8 @@ def plots(m,
           annualised_return=False,
           traded_volume=False,
           open_interest=False,
-          margin=False):
+          margin=False,
+          valuation=False):
 
     show_all = not (
         mark_price or
@@ -28,10 +29,13 @@ def plots(m,
         annualised_return or
         traded_volume or
         open_interest or
-        margin)
+        margin or 
+        valuation)
 
     df = m.to_data_frame(
         lp_fields=['stake', 'equity_share', 'stake_share', 'fee_revenue', 'annualised_return', 'margin'])
+
+    
 
     if show_all or mark_price:
         ax = df[['mark_price']].plot(title="Mark price")
@@ -80,17 +84,33 @@ def plots(m,
         ax.set(xlabel="day")
 
     if show_all or equity_share:
-        df[[col for col in df.columns if 'equity_share' in col]].plot()
+        ax = df[[col for col in df.columns if 'equity_share' in col]].plot(title="Equity Share")
+        ax.set(xlabel="day")
+        ax.set(ylabel="share")
 
     if show_all or stake_share:
-        df[[col for col in df.columns if 'stake_share' in col]].plot()
+        ax = df[[col for col in df.columns if 'stake_share' in col]].plot(title="Stake Share")
+        ax.set(xlabel="day")
+        ax.set(ylabel="share")
+
 
     if show_all or annualised_return:
-        df[[col for col in df.columns if 'annualised_return' in col]].plot(
+        ax = df[[col for col in df.columns if 'annualised_return' in col]].plot(
             title="Annualised Rate of Return")
 
     if show_all or margin:
-        df[[col for col in df.columns if 'margin' in col]].plot()
+        ax = df[[col for col in df.columns if 'margin' in col]].plot(title="Margin for orders")
+        ax.set(xlabel="day")
+        ax.set(ylabel="margin amount")
+
+    if show_all or valuation:
+        ax = df[['traded_volume', 'valuation']].plot(
+            subplots=True, title="volume & valuation")
+        ax[0].set(xlabel="day")
+        ax[0].set(ylabel="volume")
+        ax[1].set(xlabel="day")
+        ax[1].set(ylabel="value")
+
 
 
 def visualise_orders(lp: 'LiquidityProvider', plot_pegged_orders=False, plot_liquidity_fractions=False, plot_prob_of_trading=False, title='', print_liquidity=False, print_margins=False):
